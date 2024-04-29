@@ -1,40 +1,43 @@
 title: Tech Stack
 description: Choose the plan that's right for you.
-navigation.icon: i-heroicons-credit-card
+navigation.icon: i-heroicons-wrench-screwdriver
 partners:
-  headline: Tools
-  title: The best brands in the market
-  description: With these tools I work every day and I am very satisfied with them.
+  headline: Parnters
+  title: My amazing Parnters
+  description: I work with these for a few Years now! (Privacy - Not all currently visible)
   icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
-    - i-simple-icons-cloudflare
+    - i-line-md-watch-off-twotone-loop
+    - i-line-md-watch-off-twotone-loop
+    - i-line-md-watch-off-twotone-loop
 tools:
   headline: Tools
   title: The best brands in the market
   description: With these tools I work every day and I am very satisfied with them.
   icons:
-    - i-simple-icons-amazonaws
-    - i-simple-icons-heroku
-    - i-simple-icons-netlify
-    - i-simple-icons-vercel
+    - i-simple-icons-visualstudio
+    - i-simple-icons-portainer
+    - i-simple-icons-github
     - i-simple-icons-cloudflare
+    - i-simple-icons-cloudflarepages
+    - i-simple-icons-tailwindcss
 faq:
-  title: Frequently asked questions
-  description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
+  title: Frequently Asked Questions
+  description: Explore our FAQ section to learn more about our web programming services and how we can help you achieve your project goals.
   items:
-    - label: Is this a secure service?
-      content: Qui sunt nostrud aliquip reprehenderit enim proident veniam magna aliquip velit occaecat eiusmod nisi deserunt sunt.
-      defaultOpen: true
-    - label: How can I cancel my subscription?
-      content: Consectetur irure Lorem nostrud adipisicing aliqua mollit Lorem sit officia magna eiusmod cupidatat.
-    - label: How does the free trial work?
-      content: Quis officia commodo magna eu qui aliquip duis.
-    - label: Can I switch plans later?
-      content: Dolore irure ullamco dolore eu occaecat magna eiusmod dolor aliqua culpa labore.
-    - label: Do you offer refunds?
-      content: Duis mollit nostrud voluptate mollit Lorem dolore commodo veniam incididunt eiusmod.
-    - label: Do you offer support?
-      content: Aliqua sit nisi consequat pariatur Lorem minim irure qui.
+    - label: What programming languages do you use?
+      content: We specialize in a range of programming languages and Frameworks including JS/TS, Vue, Angular, Nuxt, C# and some PHP. Depending on the project's requirements, we select the most suitable technologies to ensure optimal performance and scalability.
+
+    - label: How do I start a project with you?
+      content: To start a project, simply fill out the contact form on my website/email me directly with your project details. We'll schedule a consultation to discuss your needs and outline the steps to get started.
+
+    - label: Are you currently available for hire?
+      content: For a full time job? No. But beside my 9 to 5 im working for my Company. Feel free to reach out with your project details and we'll discuss how we can collaborate.
+
+    - label: How long does it typically take to complete a website?
+      content: The timeline for developing a website can vary based on its complexity, features, and revisions. Typically, a basic website takes about 3-6 weeks, while more complex projects may take several months.
+
+    - label: Can you help with website maintenance after completion?
+      content: For open source? No. For an real customer Projekt from JPProfessionals? Yes, there we offer ongoing maintenance and support packages to help keep your website updated and running smoothly. This includes security updates, performance optimizations, and regular backups.
+
+    - label: Do you provide SEO and digital marketing services?
+      content: Yes but only on our own programmed web projects, there we can incorporate SEO best practices and collaborate with digital marketing specialists to enhance your website's visibility and performance.

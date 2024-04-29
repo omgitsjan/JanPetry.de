@@ -1,51 +1,34 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
+import type { NavItem } from "@nuxt/content/dist/runtime/types";
 
-const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
+const navigation = inject<Ref<NavItem[]>>("navigation", ref([]));
 
-const links = [{
-  label: 'Docs',
-  to: '/docs'
-}, {
-  label: 'Tech stack',
-  to: '/techstack'
-}, {
-  label: 'Blog',
-  to: '/blog'
-}]
+const links = [
+  {
+    label: "Tech stack",
+    icon: "i-i-heroicons-lock-closed",
+    to: "/techstack",
+  },
+  {
+    label: "My Blog",
+    to: "/blog",
+  },
+];
 </script>
 
 <template>
   <UHeader :links="links">
     <template #logo>
-      jp <UBadge
-        label="Web Developer"
-        variant="subtle"
-        class="mb-0.5"
-      />
+      <Logo />
     </template>
 
     <template #right>
-      <UButton
-        label="Sign in"
-        color="gray"
-        to="/login"
-      />
-      <UButton
-        label="Sign up"
-        icon="i-heroicons-arrow-right-20-solid"
-        trailing
-        color="black"
-        to="/signup"
-        class="hidden lg:flex"
-      />
+      <UColorModeButton />
+      <UButton label="Contact Me" color="primary" to="/contact" trailing-icon="i-line-md-email-twotone" />
     </template>
 
     <template #panel>
-      <UNavigationTree
-        :links="mapContentNavigation(navigation)"
-        default-open
-      />
+      <UNavigationTree :links="mapContentNavigation(navigation)" default-open />
     </template>
   </UHeader>
 </template>

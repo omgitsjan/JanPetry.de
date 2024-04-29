@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxthq/studio',
     '@vueuse/nuxt',
-    'nuxt-og-image'
+    'nuxt-og-image',
+    "@nuxthub/core"
   ],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -20,7 +21,7 @@ export default defineNuxtConfig({
     }
   },
   ui: {
-    icons: ['heroicons', 'simple-icons']
+    icons: ['heroicons', 'simple-icons', 'mdi', 'line-md'],
   },
   routeRules: {
     '/api/search.json': { prerender: true },

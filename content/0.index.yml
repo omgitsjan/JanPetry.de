@@ -1,4 +1,4 @@
-title: Jan Petry - THAT'S ME
+title: That's me - Jan Petry
 description: Welcome to my Website! I am Jan Petry, web developer and im telling you a bit about myself!
 navigation: false
 hero:
@@ -9,7 +9,7 @@ hero:
     icon: i-heroicons-user-20-solid
   links:
     - label: Get to know me
-      to: '/signup'
+      to: '/#makesme'
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -20,124 +20,34 @@ hero:
       color: gray
       to: https://github.com/omgitsjan
       target: _blank
-sections:
-  - title: The power of our service
-    description: Aliqua labore laboris fugiat. Reprehenderit exercitation eu commodo. Officia nostrud sit et aliqua ea ex sunt minim incididunt sunt.
-    id: features
-    align: left
-    features:
-      - name: Easy to use
-        description: Id laborum laboris duis nostrud excepteur ut velit.
-        icon: i-heroicons-cog
-      - name: Reliable
-        description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-        icon: i-heroicons-check
-      - name: Secure
-        description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing.
-        icon: i-heroicons-lock-closed
-    links:
-      - label: Explore components
-        to: /pro/components
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
-  - title: The speed of our service
-    description: Cillum sint enim excepteur ut deserunt qui nisi in deserunt in. Deserunt aliquip quis aliquip eu quis ex velit velit nostrud sit.
-    align: right
-    features:
-      - name: Fast
-        description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod.
-        icon: i-heroicons-rocket-launch
-      - name: Affordable
-        description: Reprehenderit fugiat elit in do ipsum ut pariatur.
-        icon: i-heroicons-currency-dollar
-      - name: Scalable
-        description: Lorem deserunt et eiusmod. Ea in consectetur minim officia.
-        icon: i-heroicons-chart-bar
-    links:
-      - label: Learn more
-        to: /pro/guide/content
-        color: gray
-        icon: i-heroicons-arrow-right-20-solid
-        trailing: true
-        size: md
-        class: ml-8
 features:
-  title: Why choose our service?
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  title: What Makes My Work Stand Out?
+  description: Explore how my commitment to cutting-edge technology and industry best practices ensures exceptional results for every project.
   items:
-    - title: Easy to use
-      description: Id laborum laboris duis nostrud excepteur ut velit nulla magna Lorem proident non.
-      icon: i-heroicons-cog
-    - title: Reliable
-      description: Magna Lorem ex cillum fugiat ad enim aute irure sit duis minim.
-      icon: i-heroicons-check
+    - title: Cutting-Edge Technology
+      description: I am dedicated to staying at the forefront of technology, adopting the latest tools and frameworks to ensure high performance and innovation.
+      icon: i-heroicons-device-phone-mobile
+    - title: Always Up-to-Date
+      description: Regular updates and continuous integration of new features keep your projects modern, secure, and competitive.
+      icon: i-heroicons-adjustments-horizontal
     - title: Secure
-      description: Proident nostrud excepteur sint ut culpa consectetur aute adipisicing non anim ullamco.
+      description: Implementing robust security measures to safeguard your data with best-in-class protocols and encryption.
       icon: i-heroicons-lock-closed
-    - title: Fast
-      description: Qui reprehenderit nostrud dolore nisi ad fugiat labore eiusmod sint aliquip nisi voluptate.
-      icon: i-heroicons-rocket-launch
-    - title: Affordable
-      description: Reprehenderit fugiat elit in do ipsum ut pariatur.
+    - title: High Performance
+      description: Optimizing for speed and efficiency, I deliver fast loading times and smooth user experiences, even under heavy load.
+      icon: i-mdi-lightning-bolt
+    - title: Cost-Effective Solutions
+      description: Delivering budget-friendly solutions without compromising quality, tailored to maximize your ROI.
       icon: i-heroicons-currency-dollar
-    - title: Scalable
-      description: Lorem deserunt et eiusmod. Ea in consectetur minim officia ullamco enim deserunt est.
+    - title: Scalable Architecture
+      description: Designing systems that grow with your business, ensuring seamless operation and expansion capability.
       icon: i-heroicons-chart-bar
-testimonials:
-  headline: Testimonials
-  title: What our customers are saying.
-  description: Proident sunt exercitation minim laborum enim laboris labore esse.
-  items:
-    - quote: Nostrud tempor sunt fugiat. Dolor in sint dolore labore non occaecat adipisicing Lorem labore ullamco enim excepteur. In fugiat Lorem sit velit id veniam esse eiusmod non ea voluptate cupidatat reprehenderit ullamco dolore. Mollit laborum occaecat aliquip.
-      author:
-        name: Rose Roberson
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=1
-          loading: lazy
-    - quote: Eiusmod dolor aute ut nulla pariatur officia consequat aute amet exercitation.
-      author:
-        name: Chace Rodgers
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=7
-          loading: lazy
-    - quote: Id duis velit enim officia ad nisi incididunt magna ex dolor minim deserunt dolor. Esse incididunt cillum nostrud esse do quis amet labore amet nulla eiusmod amet nulla Lorem. Incididunt ex voluptate irure officia laboris ea proident est qui.
-      author:
-        name: Cornelius Sheppard
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=3
-          loading: lazy
-    - quote: Velit consectetur in adipisicing culpa eiusmod commodo eu ex dolore. Officia irure nisi dolor dolore velit fugiat. Aliqua sint aliqua aute elit eu sunt.
-      author:
-        name: Destinee Woods
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=5
-          loading: lazy
-    - quote: Proident quis deserunt qui ex exercitation veniam id Lorem est cupidatat ipsum irure aliquip ad.
-      author:
-        name: Kaleb Mccormick
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=8
-          loading: lazy
-    - quote: Magna officia quis ea ea in officia non voluptate ipsum culpa do labore sunt. Aute est dolore commodo sint officia ad laboris dolor magna aliquip exercitation tempor commodo.
-      author:
-        name: Jazmin Mccall
-        description: CEO at Company
-        avatar:
-          src: https://i.pravatar.cc/120?img=9
-          loading: lazy
 cta:
-  title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Got a Question? Contact Me!
+  description: Just hit me up if you want to collab or got any Question what so ever...
   links:
-    - label: Buy now
+    - label: Write me a Message
+      trailingIcon: "i-line-md-email-twotone"
       size: xl
       color: black
-      to: /pricing
+      to: /contact
