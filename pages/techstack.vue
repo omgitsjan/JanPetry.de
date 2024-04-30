@@ -22,19 +22,17 @@ defineOgImage({
   title: page.value.title,
   description: page.value.description,
 });
-
-const isYearly = ref(false);
 </script>
 
 <template>
   <div v-if="page">
-    <div class="grid grid-cols-2 gap-4 divide-x m-24 mb-14">
+    <div class="grid grid-cols-1 gap-1 text-center lg:divide-x max-lg:divide-y m-auto p-6 mt-10 mb-8 lg:grid-cols-2">
       <div>
         <ULandingSection
           :headline="page.partners.headline"
           :title="page.partners.title"
           :description="page.partners.description"
-          class="mr-24"
+          class="m-auto lg:pr-20 lg:pl-14"
         >
           <ULandingLogos>
             <UIcon
@@ -52,7 +50,7 @@ const isYearly = ref(false);
           :headline="page.tools.headline"
           :title="page.tools.title"
           :description="page.tools.description"
-          class="ml-24"
+          class="m-auto lg:pl-20 lg:pr-12"
         >
           <ULandingLogos>
             <UIcon

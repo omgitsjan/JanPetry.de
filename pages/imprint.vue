@@ -44,7 +44,7 @@ if (post.value.image?.src) {
 
 <template>
   <UPage>
-    <UPageBody prose class="container mx-auto px-96">
+    <UPageBody prose class="container mx-auto xl:px-96 md:px-40 px-6">
         <ContentRenderer v-if="post && post.body" :value="post" />
     </UPageBody>
   </UPage>

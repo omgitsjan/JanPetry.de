@@ -1,18 +1,12 @@
-![nuxt-ui-saas-social-card](https://github.com/nuxt-ui-pro/saas/assets/739984/50bf4ddd-c4d5-47e5-a09e-0f699513dfb5)
+![jan-petry-social-card](https://github.com/omgitsjan/JanPetry.de/blob/main/public/social-card.png)
 
-# Nuxt UI Pro - SaaS template
+# JanPetry.de - Using Nuxt UI Pro
 
 [![Nuxt UI Pro](https://img.shields.io/badge/Made%20with-Nuxt%20UI%20Pro-00DC82?logo=nuxt.js&labelColor=020420)](https://ui.nuxt.com/pro)
 
 - [Live demo](https://saas-template.nuxt.dev/)
 - [Play on Stackblitz](https://stackblitz.com/github/nuxt-ui-pro/saas)
 - [Documentation](https://ui.nuxt.com/pro/getting-started)
-
-## Quick Start
-
-```bash [Terminal]
-npx nuxi init -t github:nuxt-ui-pro/saas
-```
 
 ## Setup
 
@@ -67,23 +61,6 @@ yarn build
 # bun
 bun run build
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
 
 ## Nuxt Studio integration

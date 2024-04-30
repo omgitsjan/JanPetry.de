@@ -5,7 +5,7 @@ const navigation = inject<Ref<NavItem[]>>("navigation", ref([]));
 
 const links = [
   {
-    label: "Tech stack",
+    label: "Tech-stack",
     to: "/techstack",
   },
   {
@@ -27,7 +27,7 @@ const links = [
     </template>
 
     <template #panel>
-      <UNavigationTree :links="mapContentNavigation(navigation)" default-open />
+      <UNavigationTree :links="mapContentNavigation(navigation)" default-open :multiple="false" />
     </template>
   </UHeader>
 </template>
