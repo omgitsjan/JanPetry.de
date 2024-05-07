@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: false,
   },
-  ogImage: { enabled: false },
+  ogImage: { enabled: true },
   eslint: {
     config: {
       stylistic: {
