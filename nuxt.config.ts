@@ -1,44 +1,47 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: [process.env.NUXT_UI_PRO_PATH || '@nuxt/ui-pro'],
+  extends: [process.env.NUXT_UI_PRO_PATH || "@nuxt/ui-pro"],
   modules: [
-    '@nuxt/content',
-    '@nuxt/eslint',
-    '@nuxt/image',
-    '@nuxt/ui',
-    '@nuxt/fonts',
-    '@nuxthq/studio',
-    '@vueuse/nuxt',
-    'nuxt-og-image',
-    "@nuxthub/core"
+    "@nuxt/content",
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "@nuxt/ui",
+    "@nuxt/fonts",
+    "@nuxthq/studio",
+    "@vueuse/nuxt",
+    "nuxt-og-image",
+    "@nuxthub/core",
   ],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
-    'components:extend': (components) => {
-      const globals = components.filter(c => ['UButton'].includes(c.pascalName))
+    "components:extend": (components) => {
+      const globals = components.filter((c) =>
+        ["UButton"].includes(c.pascalName)
+      );
 
-      globals.forEach(c => c.global = true)
-    }
+      globals.forEach((c) => (c.global = true));
+    },
   },
   ui: {
-    icons: ['heroicons', 'simple-icons', 'mdi', 'line-md'],
+    icons: ["heroicons", "simple-icons", "mdi", "line-md"],
   },
   routeRules: {
-    '/api/search.json': { prerender: true },
-    '/docs': { redirect: '/docs/getting-started', prerender: false }
+    "/api/search.json": { prerender: true },
+    "/docs": { redirect: "/docs/getting-started", prerender: false },
   },
   devtools: {
-    enabled: true
+    enabled: true,
   },
   typescript: {
-    strict: false
+    strict: false,
   },
+  ogImage: { enabled: false },
   eslint: {
     config: {
       stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  }
-})
+        commaDangle: "never",
+        braceStyle: "1tbs",
+      },
+    },
+  },
+});
