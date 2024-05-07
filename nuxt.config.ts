@@ -9,8 +9,8 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxthq/studio",
     "@vueuse/nuxt",
-    "nuxt-og-image",
     "@nuxthub/core",
+    "@nuxtjs/seo"
   ],
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
@@ -27,7 +27,6 @@ export default defineNuxtConfig({
   },
   routeRules: {
     "/api/search.json": { prerender: true },
-    "/docs": { redirect: "/docs/getting-started", prerender: false },
   },
   devtools: {
     enabled: true,
@@ -35,7 +34,9 @@ export default defineNuxtConfig({
   typescript: {
     strict: false,
   },
-  ogImage: { enabled: true },
+  ogImage: {
+    enabled: false,
+  },
   eslint: {
     config: {
       stylistic: {

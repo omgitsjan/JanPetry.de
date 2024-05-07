@@ -5,7 +5,7 @@ const navigation = inject<Ref<NavItem[]>>("navigation", ref([]));
 
 const links = [
   {
-    label: "Tech-stack",
+    label: "My Techstack",
     to: "/techstack",
   },
   {
