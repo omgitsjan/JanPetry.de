@@ -3,7 +3,7 @@ title: '[DE] Docker: Ein Einblick in die Container Revolution'
 description: Ein kleiner Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.
 image:
   src: /blog/docker.webp
-date: 2023-07-01
+date: 2023-07-01T00:00:00.000Z
 authors:
   - name: Jan Petry
     to: https://github.com/omgitsjan
@@ -11,7 +11,6 @@ authors:
       src: https://avatars.githubusercontent.com/u/42674570
 badge:
   label: Docker
-
 ---
 
 Docker sollte jedem Entwickler kein unbekannter Name sein. Es ist ein Name, der in Tech-Blogs zitiert, auf Konferenzen diskutiert und in Foren lebhaft debattiert wird. Aber was genau ist Docker? Warum erzeugt es so viel Aufsehen in der Entwicklergemeinschaft und warum scheint es, als ob jeder über Docker spricht? Um diese Fragen zu beantworten, müssen wir zuerst verstehen, was Docker ist und was es tut.
