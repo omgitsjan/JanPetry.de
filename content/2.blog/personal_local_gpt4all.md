@@ -3,7 +3,7 @@ title: '[DE] Lokales LLM mit GPT4All'
 description: Über die Feiertage habe ich etwas mit lokalen LLMs und GPT4All herumgetestet um zu sehen was heute schon möglich ist in der welt der Künsltlichen Intelligenz.
 image:
   src: /blog/gpt.webp
-date: 2023-27-12
+date: 2023-12-27T00:00:00.000Z
 authors:
   - name: Jan Petry
     to: https://github.com/omgitsjan
