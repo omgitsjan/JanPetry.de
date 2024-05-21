@@ -1,3 +1,6 @@
+import { promises as fs } from 'fs'
+import path from 'path'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: [process.env.NUXT_UI_PRO_PATH || "@nuxt/ui-pro"],
@@ -21,7 +24,17 @@ export default defineNuxtConfig({
 
       globals.forEach((c) => (c.global = true));
     },
+    async 'nitro:config'(nitroConfig) {
+      const contentDir = path.resolve(__dirname, 'content/2.blog')
+      const files = await fs.readdir(contentDir)
+      const routes = files
+        .filter(file => file.endsWith('.md'))
+        .map(file => `/blog/${file.replace('.md', '')}`)
+
+      nitroConfig.prerender.routes.push(...routes)
+    }
   },
+  ssr: true,
   ui: {
     icons: ["heroicons", "simple-icons", "mdi", "line-md"],
   },
@@ -45,4 +58,4 @@ export default defineNuxtConfig({
       },
     },
   },
-});
+})
