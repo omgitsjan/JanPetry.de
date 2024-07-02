@@ -28,7 +28,7 @@
     "@nuxthub/core": "^0.6.4",
     "@nuxtjs/seo": "2.0.0-rc.10",
     "@vueuse/nuxt": "^10.10.0",
-    "eslint": "^9.4.0",
+    "eslint": "^9.6.0",
     "sass": "^1.77.4",
     "vue-tsc": "^2.0.19",
     "wrangler": "^3.59.0"
