@@ -4,6 +4,7 @@ import path from 'path';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: [process.env.NUXT_UI_PRO_PATH || "@nuxt/ui-pro"],
+
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",
@@ -35,22 +36,30 @@ export default defineNuxtConfig({
       nitroConfig.prerender.routes.push(...routes)
     }
   },
+
   ssr: true,
-  ui: {
-    icons: ["heroicons", "simple-icons", "mdi", "line-md"],
-  },
+
   routeRules: {
+    "/": { prerender: true },
     "/api/search.json": { prerender: true },
+    "/blog": { prerender: true },
+    "/techstack": { prerender: true },
+    "/imprint": { prerender: true },
+    "/contact": { prerender: true },
   },
+
   devtools: {
     enabled: true,
   },
+
   typescript: {
     strict: false,
   },
+
   ogImage: {
     enabled: false,
   },
+
   eslint: {
     config: {
       stylistic: {
@@ -59,4 +68,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: "2024-07-26",
 })
