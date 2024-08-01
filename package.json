@@ -12,7 +12,7 @@
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
-    "nuxt": "^3.12.4"
+    "nuxt": "^3.12.2"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.1.21",
@@ -28,7 +28,7 @@
     "@nuxthub/core": "^0.7.0",
     "@nuxtjs/seo": "2.0.0-rc.11",
     "@vueuse/nuxt": "^10.11.0",
-    "eslint": "^9.6.0",
+    "eslint": "^9.8.0",
     "sass": "^1.77.6",
     "vue-tsc": "^2.0.24",
     "wrangler": "^3.62.0"
