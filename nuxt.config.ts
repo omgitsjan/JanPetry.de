@@ -13,7 +13,6 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxthq/studio",
     "@vueuse/nuxt",
-    "@nuxthub/core",
     "@nuxtjs/seo"
   ],
 
