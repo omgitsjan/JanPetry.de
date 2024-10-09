@@ -5,6 +5,13 @@ import path from 'path';
 export default defineNuxtConfig({
   extends: [process.env.NUXT_UI_PRO_PATH || "@nuxt/ui-pro"],
 
+  site: {
+    url: 'https://janpetry.de',
+    name: 'Jan Petry',
+    description: 'Hi, I am Jan. Founder of JPProfessionals, DJ & Producer. Also full time developer based near Trier. Welcome to my Website!',
+    defaultLocale: 'en'
+  },
+
   modules: [
     "@nuxt/content",
     "@nuxt/eslint",
