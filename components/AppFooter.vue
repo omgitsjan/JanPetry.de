@@ -1,49 +1,49 @@
 <script setup lang="ts">
 const links = [
   {
-    label: "Resources",
+    label: 'Resources',
     children: [
       {
-        label: "Blog",
-        to: "/blog",
+        label: 'Blog',
+        to: '/blog'
       },
       {
-        label: "Changelog",
-        to: "https://github.com/omgitsjan/JanPetry.de/releases",
-        target: "_blank",
-      },
-    ],
+        label: 'Changelog',
+        to: 'https://github.com/omgitsjan/JanPetry.de/releases',
+        target: '_blank'
+      }
+    ]
   },
   {
-    label: "Business",
+    label: 'Business',
     children: [
       {
-        label: "My Company",
-        to: "https://jpprofessionals.de",
-        target: "_blank",
+        label: 'My Company',
+        to: 'https://jpprofessionals.de',
+        target: '_blank'
       },
       {
-        label: "Portal",
-        to: "https://jpprofessionals.de/auth/signin?redirect=/portal",
-        target: "_blank",
-      },
-    ],
+        label: 'Portal',
+        to: 'https://jpprofessionals.de/auth/signin?redirect=/portal',
+        target: '_blank'
+      }
+    ]
   },
   {
-    label: "Legal",
+    label: 'Legal',
     children: [
       {
-        label: "Imprint",
-        to: "/imprint",
+        label: 'Imprint',
+        to: '/imprint'
       },
       {
-        label: "License",
-        to: "https://github.com/omgitsjan/JanPetry.de/blob/main/LICENSE.md",
-        target: "_blank",
-      },
-    ],
-  },
-];
+        label: 'License',
+        to: 'https://github.com/omgitsjan/JanPetry.de/blob/main/LICENSE.md',
+        target: '_blank'
+      }
+    ]
+  }
+]
 </script>
 
 <template>
@@ -57,7 +57,16 @@ const links = [
               target="_blank"
             >
               <NuxtImg
+                v-if="$colorMode.value === 'dark'"
                 src="https://github-readme-stats.vercel.app/api?username=omgitsjan&show_icons=true&theme=transparent&border_color=1f2937&count_private=true&text_color=d1d5db&icon_color=38ef7d&ring_color=38ef7d&title_color=FFFFFF&include_all_commits=true"
+                placeholder
+                preload
+                alt="GitHub Stats"
+                class="h-28"
+              />
+              <NuxtImg
+                v-if="$colorMode.value === 'light'"
+                src="https://github-readme-stats.vercel.app/api?username=omgitsjan&show_icons=true&theme=transparent&border_color=e5e7eb&count_private=true&text_color=4b5563&icon_color=0fd85b&ring_color=0fd85b&title_color=000000&include_all_commits=true"
                 placeholder
                 preload
                 alt="GitHub Stats"
