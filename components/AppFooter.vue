@@ -57,7 +57,7 @@ const links = [
               target="_blank"
             >
               <NuxtImg
-                src="https://camo.githubusercontent.com/7a95d00301bda09b38de333d84ba2fbf14385a538fed93877f6425b0717fd44a/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d6f6d676974736a616e2673686f775f69636f6e733d7472756526686964655f626f726465723d66616c7365267468656d653d646973636f72645f6f6c645f626c7572706c65"
+                src="https://github-readme-stats.vercel.app/api?username=omgitsjan&show_icons=true&theme=transparent&border_color=1f2937&count_private=true&text_color=d1d5db&icon_color=38ef7d&ring_color=38ef7d&title_color=FFFFFF&include_all_commits=true"
                 placeholder
                 preload
                 alt="GitHub Stats"
