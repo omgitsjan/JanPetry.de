@@ -49,7 +49,7 @@ importers:
         specifier: ^11.1.0
         version: 11.1.0(magicast@0.3.5)(nuxt@3.13.2(@parcel/watcher@2.4.1)(@types/node@22.8.1)(eslint@9.13.0(jiti@2.3.3))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.24.1)(sass@1.80.4)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.10(@types/node@22.8.1)(sass@1.80.4)(terser@5.36.0))(vue-tsc@2.1.8(typescript@5.6.3)))(rollup@4.24.1)(vue@3.5.12(typescript@5.6.3))
       eslint:
-        specifier: ^9.11.1
+        specifier: ^9.13.0
         version: 9.13.0(jiti@2.3.3)
       sass:
         specifier: ^1.79.4
@@ -12301,7 +12301,7 @@ snapshots:
   terser@5.36.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.12.1
+      acorn: 8.13.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
