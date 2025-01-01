@@ -1,6 +1,7 @@
 ---
-title: '[DE] Docker: Ein Einblick in die Container Revolution'
-description: Ein kleiner Blogartikel, der erklärt, was Docker ist, warum es bei Entwicklern so beliebt ist und wie es funktioniert.
+title: "[DE] Docker: Ein Einblick in die Container Revolution"
+description: Ein kleiner Blogartikel, der erklärt, was Docker ist, warum es bei
+  Entwicklern so beliebt ist und wie es funktioniert.
 image:
   src: /blog/docker.webp
 date: 2023-07-01T00:00:00.000Z
@@ -21,7 +22,7 @@ Docker ist im Grunde ein Open-Source-Projekt, das es Entwicklern und Systemadmin
 
 ## Warum ist Docker so beliebt?
 
-Aber warum ist Docker so populär geworden, besonders unter Entwicklern? Die Antwort liegt in den Vorteilen, die Docker bietet und die lässt sich auf einige Punkte zurückführen:
+Aber warum ist Docker so populär geworden, besonders unter Entwicklern? Die Antwort liegt in den Vorteilen, die Docker bietet und die sich auf einige Punkte zurückführen lässt:
 
 ### Effizienz und Konsistenz
 
@@ -57,7 +58,7 @@ Docker hat eine Befehlszeilenschnittstelle, mit der man Images und Container ver
 
 ### Docker Beispiele als Code Snippets
 
-#### Beispiel für ein .dockerfile\*\*
+#### Beispiel für ein .dockerfile:
 
 ```bash
     # Schritt 1: Verwende ein Basis-Image mit .NET Core SDK
@@ -95,11 +96,11 @@ Starten Sie einen Container aus dem Image (run):
 
 In diesen Beispielen steht `-t mein-app-name` für das Tagging des Images mit dem Namen "mein-app-name", und `-p 8080:8080` für das Weiterleiten des Ports 8080 vom Host zum Container. Der Punkt am Ende des `docker build` Befehls sagt Docker, dass es das Dockerfile im aktuellen Verzeichnis verwenden soll.
 
-## Schlussfolgerung
+## Fazit
 
 Docker hat die Art und Weise, wie Anwendungen erstellt, ausgerollt und ausgeführt werden, revolutioniert. Durch die Lösung des Problems "bei mir läuft's" hat Docker die Softwareentwicklung, das Testen und das Ausrollen einfacher und effizienter gemacht. Für diejenigen, die sich noch nicht in die Welt von Docker gewagt haben, gibt es keinen besseren Zeitpunkt, um zu starten.
 
-In zukünftigen Beiträgen werden tiefer in Docker eingetaucht, fortgeschrittenere Themen wie Docker Compose und wie Docker in eine CI/CD-Pipeline integriert werden kann, erforscht. Bleibt dran!
+In zukünftigen Beiträgen werden wir tiefer in Docker eintauchen, fortgeschrittenere Themen wie Docker Compose und wie Docker in eine CI/CD-Pipeline integriert werden kann, erforscht. Bleibt dran!
 
 In der Zwischenzeit schau doch gerne mal meinen [Discord Bot](https://github.com/omgitsjan/DiscordBotAI) an, dieser hat ebenfalls sein eigenes [Docker Image](https://hub.docker.com/r/omgitsjan/discordbotai).
 

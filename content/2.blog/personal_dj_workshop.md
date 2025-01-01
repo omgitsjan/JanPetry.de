@@ -1,6 +1,7 @@
 ---
 title: "[DE] DJ-Workshop für Jugendliche im Haus der Jugend Konz"
-description: Ein spannender Blogartikel über die Organisation eines DJ-Workshops für Jugendliche, der Technologie und Musik im Haus der Jugend Konz kombiniert.
+description: Ein spannender Blogartikel über die Organisation eines DJ-Workshops
+  für Jugendliche, der Technologie und Musik im Haus der Jugend Konz kombiniert.
 image:
   src: /blog/djworkshop.webp
 date: 2023-12-22
@@ -38,12 +39,20 @@ Bleibt dran für Updates!
 
 Link zur Workshop (anmeldung abgelaufen): <https://www.junetko.de/>
 
-## Update
+## Update 1
 
-Wir sind mitten im DJ-Workshop, und auch wenn es weniger Teilnehmer sind, als wir uns erhofft hatten, finde ich, dass es ein Erfolg ist. Ein Teilnehmer, Emil, schlägt sich hervorragend und hat nun nicht nur theoretisches Wissen, sondern kann auch schon alleine hinter den Decks stehen und Übergänge zaubern. Genau so, wie man sich das vorgestellt hat. In den letzten paar Terminen werden wir nun etwas exotischer werden und auch eine Stunde mit Vinyl auflegen. Wir werden weg von meinem DDJ-SX2 gehen und hin zu einem NX2-Set, um auch die großen Geräte einmal "bedienen" zu können.
+Wir sind mitten im DJ-Workshop und ich finde, dass es ein voller Erfolg ist. Die Teilnehmer schlagen sich hervorragend und haben nicht nur theoretisches Wissen aufgebaut, sondern können bereits alleine hinter den Decks stehen und Übergänge zaubern. Genau so, wie man sich das vorgestellt hat. In den letzten paar Terminen werden wir nun etwas exotischer werden und auch eine Stunde mit Vinyl auflegen. Wir werden weg von meinem DDJ-SX2 gehen und hin zu einem NX2-Set, um auch die großen Geräte einmal "bedienen" zu können.
 
 Das Ganze ist ein Herzensprojekt von mir, da ich mich langsam aus dem DJ-Geschäft etwas zurückziehe und mich mehr meiner Hauptleidenschaft, dem Programmieren, widme.
 
-Hiernach gibt es noch einmal ein finales Update und ein Fazit. Danke fürs Lesen bis hierher!
+## Update 2 - Finale Gedanken und Fazit
+
+Der DJ-Workshop ist inzwischen abgeschlossen und ich könnte nicht zufriedener sein. Es hat sich gezeigt, wie wertvoll solche Projekte sind. Zum Abschluss hatten die Teilnehmer die Möglichkeit, ihre gelernten Fähigkeiten auf dem Konzerheimat-Fest vor mehreren hundert Leuten als Warmup zu präsentieren – ein riesiger Erfolg!
+
+Für mich persönlich war es auch ein spannender Abschluss, bevor ich mich nun endgültig auf neue Projekte konzentriere. Der Fokus geht weiter in Richtung Programmieren und Projektmanagement, aber Musik bleibt ein Teil meines Lebens.
+
+Danke an alle, die dabei waren oder das Projekt unterstützt haben. Vielleicht gibt es in der Zukunft ja ein ähnliches Event – wer weiß!
+
+Vielen Dank fürs Lesen und bis bald!
 
 - _Jan_

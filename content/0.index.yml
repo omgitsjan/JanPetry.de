@@ -1,6 +1,6 @@
 title: That's me - Jan Petry
 description: Welcome to my Website! I am Jan Petry, web developer and im telling you a bit about myself!
-navigation: false
+navigation: ''
 hero:
   title: Web Developer from Germany
   description: I am Jan. Founder of JPProfessionals, DJ & Producer. Also full time developer based near Trier.
@@ -9,7 +9,7 @@ hero:
     icon: i-heroicons-user-20-solid
   links:
     - label: Get to know me
-      to: '/#makesme'
+      to: /#makesme
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -47,7 +47,7 @@ cta:
   description: Just hit me up if you want to collab or got any Question what so ever...
   links:
     - label: Write me a Message
-      trailingIcon: "i-line-md-email-twotone"
+      trailingIcon: i-line-md-email-twotone
       size: xl
       color: black
       to: /contact

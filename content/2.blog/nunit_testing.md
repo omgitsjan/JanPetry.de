@@ -1,6 +1,7 @@
 ---
-title: '[DE] Einführung in das .NET Testing: Ein kleiner Überblick'
-description: Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es funktioniert, mit besonderem Schwerpunkt auf NUnit.
+title: "[DE] Einführung in das .NET Testing: Ein kleiner Überblick"
+description: Ein kleiner Blogartikel darüber, was .NET Testing ist und wie es
+  funktioniert, mit besonderem Schwerpunkt auf NUnit.
 image:
   src: /blog/code2.webp
 date: 2023-06-01
@@ -11,7 +12,6 @@ authors:
       src: https://avatars.githubusercontent.com/u/42674570
 badge:
   label: Dotnet
-
 ---
 
 Mit diesem Beitrag will ich euch das Thema .NET Testing etwas näher bringen. Da die Softwareentwicklung ein fortlaufender Prozess der Verbesserung und Optimierung ist, spielt das Testing dabei eine entscheidende Rolle. Das Testen hilft uns, unser Vertrauen in den Code zu stärken, den wir schreiben, und natürlich Probleme frühzeitig zu identifizieren. Wir werden uns in diesem Beitrag auf das NUnit-Framework konzentrieren, allerdings existieren zahlreiche weitere Testing-Frameworks in .NET, welche vergleichbare Ansätze verfolgen.
@@ -20,15 +20,15 @@ Mit diesem Beitrag will ich euch das Thema .NET Testing etwas näher bringen. Da
 
 Das NUnit-Framework ist ein weit verbreitetes Tool in der .NET Welt und dient zur Erstellung von Unit-Tests. Ursprünglich inspiriert von JUnit, hat NUnit sich weiterentwickelt und bietet nun eine umfangreiche Palette an Features, die das Testen deutlich erleichtern und effizienter machen.
 
-Andere verbreitete .NET Testframeworks sind z. B. xUnit und MSTest. Alle drei haben ihre Stärken und Schwächen und die Wahl hängt oft von den Anforderungen und des Projekts und der eigenen Erfahrung mit den Frameworks ab. Heute wollen wir uns aber, wie schon erwähnt, nur auf NUnit als Framework konzentriert.
+Andere verbreitete .NET Testframeworks sind z. B. xUnit und MSTest. Alle drei haben ihre Stärken und Schwächen und die Wahl hängt oft von den Anforderungen und des Projekts und der eigenen Erfahrung mit den Frameworks ab. Heute wollen wir uns aber, wie schon erwähnt, nur auf NUnit als Framework konzentrieren.
 
-In NUnit verwenden wir Attribute, um Testmethoden zu kennzeichnen und ihren Ablauf zu steuern. Schauen wir uns zunächst an, was Attributen überhaupt sind. In .NET vereinfachen sie nicht nur, sondern helfen aktiv besseren Code zu schreiben. Sie annotieren den Code und können zur Laufzeit Verhalten beeinflussen.
+In NUnit verwenden wir Attribute, um Testmethoden zu kennzeichnen und ihren Ablauf zu steuern. Schauen wir uns zunächst an, was Attribute überhaupt sind. In .NET vereinfachen sie nicht nur, sondern helfen aktiv besseren Code zu schreiben. Sie annotieren den Code und können zur Laufzeit Verhalten beeinflussen.
 
 ## Was sind also jetzt genau Attribute?
 
 In .NET können Attribute dazu verwendet werden, zusätzliche Informationen zu Codeelementen wie Klassen, Methoden oder Eigenschaften zu liefern. Sie können als eine Form der Metadaten betrachtet werden, die während der Laufzeit über Reflexion abgerufen werden können.
 
-In .NET wird das Konzept der Attribute durch den Einsatz von eckigen Klammern dargestellt. Ein Attribut kann Parameter haben und kann auf verschiedene Codeelemente angewendet werden. Beispielsweise kann das `[Required]` Attribut dazu verwendet werden, anzugeben, dass eine Eigenschaft für das Model in einer Form erforderlich ist.
+In .NET wird das Konzept der Attribute durch den Einsatz von eckigen Klammern dargestellt. Ein Attribut kann Parameter haben und kann auf verschiedene Codeelemente angewendet werden. Beispielsweise kann das `[Required]`-Attribut dazu verwendet werden, anzugeben, dass eine Eigenschaft für das Modell in einem Formular erforderlich ist.
 
 ## Der Einsatz von Attributen im Testing
 
@@ -71,7 +71,7 @@ public void Sollte_Summe_Berechnen(int a, int b, int erwarteteSumme)
 
 In diesem Fall führen wir denselben Test mit verschiedenen Eingabewerten aus und erwarten verschiedene Ergebnisse.
 
-## Wie sieht so ein Test aus?
+## Wie sieht ein solcher Test aus?
 
 Bevor wir uns ein Test anschauen können, müssen wir verstehen wie Tests aufgebaut sind. Dazu nutzen wir das AAA-Modell (Arrange, Act, Assert), es ist eine übersichtliche und effektive Methode zur Strukturierung von Unit-Tests, die weit verbreitet ist, nicht nur in .NET, sondern in der gesamten Softwareentwicklung ist dies überall zu finden.
 
@@ -120,7 +120,7 @@ public string GetAssemblyVersion()
 }
 ```
 
-Jetzt wissen wir natürlich nicht, ob das ganze auch nach etlichen Änderungen am Code oder vielleicht sogar am Assembly selbst, immer noch funktioniert. Und da kommen nun diese Tests hier ins Spiel. Der Assembly ist natürlich eine etwas schwieriger zu testende Komponente und wir mussten mit DI einen Provider über unseren Service legen, das soll uns aber erstmal nicht weiter stören, da wir uns ja nur auf die Tests an sich konzentrieren möchten.
+Jetzt wissen wir natürlich nicht, ob das Ganze auch nach etlichen Änderungen am Code oder vielleicht sogar an der Assembly selbst immer noch funktioniert. Und da kommen nun diese Tests hier ins Spiel. Der Assembly ist natürlich eine etwas schwieriger zu testende Komponente und wir mussten mit DI einen Provider über unseren Service legen, das soll uns aber erstmal nicht weiter stören, da wir uns ja nur auf die Tests an sich konzentrieren möchten.
 
 ```csharp
     [TestFixture]
@@ -152,19 +152,19 @@ Jetzt wissen wir natürlich nicht, ob das ganze auch nach etlichen Änderungen a
     }
 ```
 
-Das ist also jetzt unser Test. Test sollen in der Regel einfach gelesen werden. Hier kann man also gut sehen, dass wir zuerst alles vorbereiten. Den AppInfoService initialisieren und danach überprüfen, ob das, was wir hereingeben, auch so herauskommt, dass es für uns passt. Wenn ich nun extra einen Fehler einbaue und der Test fehlschlägt, erscheint es Rot.
+Das ist also jetzt unser Test. Tests sollen in der Regel einfach zu lesen sein. Hier kann man also gut sehen, dass wir zuerst alles vorbereiten. Den AppInfoService initialisieren und danach überprüfen, ob das, was wir hereingeben, auch so herauskommt, dass es für uns passt. Wenn ich nun extra einen Fehler einbaue und der Test fehlschlägt, erscheint es Rot.
 
 ## Der Wert des Testings
 
-Mit Testen stellen wir sicher, dass unser Code die erwartete Funktionalität liefert. Durch das Implementieren von Tests können wir sowohl die Korrektheit des Codes überprüfen als auch, dessen Qualität verbessern. Ein gut strukturierter und durchdachter Testplan hilft dabei, Fehler frühzeitig zu erkennen, was letztendlich zu robusterem und zuverlässigerem Code führt.
+Mit Testen stellen wir sicher, dass unser Code die erwartete Funktionalität liefert. Durch das Implementieren von Tests können wir sowohl die Korrektheit des Codes überprüfen als auch, dessen Qualität verbessern. Ein gut strukturierter und durchdachter Testplan hilft dabei, Fehler frühzeitig zu erkennen. Das führt letztendlich zu robusterem und zuverlässigerem Code.
 
 ## Testen in Theorie vs. Praxis
 
 Softwaretests sind in der Theorie ein strukturierter, klarer Prozess, unterstützt durch Tools wie NUnit und diverse Testarten. Zudem möchte man natürlich eine hohe, wenn nicht 100 % Abdeckung von seinem Code. In der Praxis jedoch werden wir mit komplexen Abhängigkeiten, Wartungsaufwand und Zeitdruck konfrontiert. Trotz dieser Herausforderungen ist das Praxistesten essenziell, um qualitativ hochwertige Software zu liefern. Selbst wenn es am Ende nur 30 % Abdeckung sind oder es aus Gründen nur wenige Tests sind, bringt uns jeder Test in der Praxis näher an das Ziel von allen: stabile und zuverlässige Software.
 
-Wichtig zu erwähnen ist noch, dass wir oft hören, dass Code-Duplizierung vermieden werden sollte. Dieser Grundsatz, bekannt als DRY-Prinzip (Don't Repeat Yourself), ist ein Kernkonzept guter Programmierpraxis. Aber gilt das auch für unsere Tests? Interessanterweise nicht unbedingt. Beim Schreiben von Tests kann ein gewisses Maß an Duplizierung sogar von Vorteil sein. Tests sollen in erster Linie klar und leicht zu verstehen sein. Wenn das Verallgemeinern von Tests zu komplexem Code führt, der schwer zu lesen und zu verstehen ist, dann ist das kontraproduktiv. Schließlich möchten wir, dass jeder Test so einfach wie möglich ist, damit Fehler leicht identifiziert und behoben werden können. Zudem möchten wir, dass die Tests unabhängig voneinander sind, Methoden zu verallgemeiner bedeutet auch ggf. Abhängigkeiten einzubauen.
+Wichtig zu erwähnen ist noch, dass wir oft hören, dass Code-Duplizierung vermieden werden sollte. Dieser Grundsatz, bekannt als DRY-Prinzip (Don't Repeat Yourself), ist ein Kernkonzept guter Programmierpraxis. Aber gilt das auch für unsere Tests? Interessanterweise ist das nicht unbedingt der Fall. Beim Schreiben von Tests kann ein gewisses Maß an Duplizierung sogar von Vorteil sein. Tests sollen in erster Linie klar und leicht zu verstehen sein. Wenn das Verallgemeinern von Tests zu komplexem Code führt, der schwer zu lesen und zu verstehen ist, dann ist das kontraproduktiv. Schließlich möchten wir, dass jeder Test so einfach wie möglich ist, damit Fehler leicht identifiziert und behoben werden können. Zudem möchten wir, dass die Tests unabhängig voneinander sind, Methoden zu verallgemeiner bedeutet auch ggf. Abhängigkeiten einzubauen.
 
-## Schlussfolgerung
+## Fazit
 
 Das war eine grundlegende Einführung in das .NET Testing, wobei der Schwerpunkt hier auf dem NUnit-Framework lag. Es ist wichtig zu betonen, dass das Erlernen und Anwenden von Testpraktiken ein fortlaufender Prozess ist und dass die bestehenden .NET Testframeworks viel mehr bieten als hier beschrieben wurde.
 

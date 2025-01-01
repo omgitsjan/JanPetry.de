@@ -1,6 +1,8 @@
 ---
-title: '[DE] Lokales LLM mit GPT4All'
-description: Über die Feiertage habe ich etwas mit lokalen LLMs und GPT4All herumgetestet um zu sehen was heute schon möglich ist in der welt der Künsltlichen Intelligenz.
+title: "[DE] Lokales LLM mit GPT4All"
+description: Über die Feiertage habe ich etwas mit lokalen LLMs und GPT4All
+  herumgetestet um zu sehen was heute schon möglich ist in der welt der
+  Künsltlichen Intelligenz.
 image:
   src: /blog/gpt.webp
 date: 2023-12-27T00:00:00.000Z
@@ -11,16 +13,15 @@ authors:
       src: https://avatars.githubusercontent.com/u/42674570
 badge:
   label: AI
-
 ---
 
 ## 🤖 Experiment über die Feiertage: Lokales LLM mit GPT4All 🤖
 
-In den Feiertagen widmete ich mich einem faszinierenden Experiment: Ich betrieb ein Large Language Model (LLM) lokal auf meinem System, unterstützt von meiner GPU. Ziel war es, die Machbarkeit und Effizienz eines solchen Unterfangens zu erkunden.
+Während der Feiertage widmete ich mich einem faszinierenden Experiment: Ich betrieb ein Large Language Model (LLM) lokal auf meinem System, unterstützt von meiner GPU. Ziel war es, die Machbarkeit und Effizienz eines solchen Unterfangens zu erkunden.
 
 ## Start mit GPT4All
 
-Das Herzstück des Projekts war GPT4All, ein beeindruckendes Open-Source-Projekt mit über 50k Sternen auf GitHub (<https://lnkd.in/eKzKwiQg>). Mit seiner benutzerfreundlichen Installation und einem Interface ähnlich denen von OpenAI, Microsoft und Google war der Einstieg ein Kinderspiel. Besonders praktisch war die Möglichkeit, aus einer Vielzahl von AI-Modellen zu wählen, entweder über den integrierten Browser oder durch direkten Download.
+Das Herzstück des Projekts war GPT4All, ein beeindruckendes Open-Source-Projekt mit über 50k Sternen auf GitHub (<https://lnkd.in/eKzKwiQg>). Dank der benutzerfreundlichen Installation und einem Interface, das dem von OpenAI, Microsoft und Google ähnelt, war der Einstieg ein Kinderspiel. Besonders praktisch war die Möglichkeit, aus einer Vielzahl von AI-Modellen zu wählen, entweder über den integrierten Browser oder durch direkten Download.
 
 ## Modellauswahl: Mistra OpenOrca
 
@@ -28,7 +29,7 @@ Ich entschied mich für Mistra OpenOrca, ein beeindruckendes, kostenloses Modell
 
 ### Features und Sprachflexibilität
 
-Ein Highlight war die Funktion „Local Document Collections“, die es mir ermöglichte, dem Modell Zugriff auf persönliche Dokumente, wie mein Tagebuch, zu gewähren. Hierbei traten allerdings noch einige Herausforderungen auf. Zudem verarbeitete das Modell Anfragen auf Deutsch, antwortete jedoch gelegentlich auf Englisch.
+Ein Highlight war die Funktion „Local Document Collections“, die es mir ermöglichte, dem Modell Zugriff auf persönliche Dokumente – zum Beispiel mein Tagebuch – zu gewähren. Hierbei traten allerdings noch einige Herausforderungen auf. Zudem verarbeitete das Modell Anfragen auf Deutsch, antwortete jedoch gelegentlich auf Englisch.
 
 ### Performance-Details
 
@@ -36,7 +37,7 @@ Das Modell lief auf meiner Radeon-GPU überraschend effizient, mit einer Spitzen
 
 ## Abschließende Gedanken
 
-Dieses Experiment war nicht nur eine spannende Herausforderung, sondern hat auch das enorme Potenzial lokaler LLMs aufgezeigt. Ich freue mich darauf, diese Technologie weitererkunden und bin gespannt auf eure Gedanken und Erfahrungen in diesem Bereich. Lasst uns gemeinsam die Möglichkeiten dieser faszinierenden Technologie erforschen! Unten finden Sie einige Screenshots meiner Erfahrungen.
+Dieses Experiment war nicht nur eine spannende Herausforderung, sondern hat auch das enorme Potenzial lokaler LLMs aufgezeigt. Ich freue mich darauf, diese Technologie weiter zu erkunden und bin gespannt auf eure Gedanken und Erfahrungen in diesem Bereich. Lasst uns gemeinsam die Möglichkeiten dieser faszinierenden Technologie erforschen! Unten finden Sie einige Screenshots meiner Erfahrungen.
 
 Guten Rutsch ins neue Jahr! 🎆
 
