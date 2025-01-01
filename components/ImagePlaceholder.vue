@@ -5,7 +5,10 @@
     <div
       class="rounded-lg relative overflow-hidden border border-dashed border-gray-900/10 dark:border-white/10"
     >
-      <NuxtImg src="/jan-petry.webp" class="aspect-square" />
+      <NuxtImg
+        src="/jan-petry.webp"
+        class="aspect-square"
+      />
     </div>
   </div>
 </template>

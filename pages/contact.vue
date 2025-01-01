@@ -1,55 +1,55 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: "contact",
-});
+  layout: 'contact'
+})
 
 useSeoMeta({
-  title: "Contact",
-});
+  title: 'Contact'
+})
 
 const fields = [
   {
-    name: "name",
-    label: "Name",
-    type: "text",
-    placeholder: "Tell me your name",
+    name: 'name',
+    label: 'Name',
+    type: 'text',
+    placeholder: 'Tell me your name'
   },
   {
-    name: "email",
-    type: "email",
-    label: "Email",
-    placeholder: "Enter your email",
+    name: 'email',
+    type: 'email',
+    label: 'Email',
+    placeholder: 'Enter your email'
   },
   {
-    name: "message",
-    label: "Message",
-    type: "text",
-    placeholder: "What do you want to talk about?",
-  },
-];
+    name: 'message',
+    label: 'Message',
+    type: 'textarea',
+    placeholder: 'What do you want to talk about?'
+  }
+]
 
 const validate = (state: any) => {
-  const errors = [];
+  const errors = []
   if (!state.email)
-    errors.push({ path: "email", message: "Email is required" });
-  if (!state.name) errors.push({ path: "name", message: "Name is required" });
+    errors.push({ path: 'email', message: 'Email is required' })
+  if (!state.name) errors.push({ path: 'name', message: 'Name is required' })
   if (!state.message)
-    errors.push({ path: "message", message: "A Message is required" });
-  return errors;
-};
+    errors.push({ path: 'message', message: 'A Message is required' })
+  return errors
+}
 
 function onSubmit(data: any) {
-  console.log("Submitted", data);
+  console.log('Submitted', data)
 
-  const mailText =
-    "mailto:mail@janpetry.de?subject=Contact Form via JanPetry.de from " +
-    data.name +
-    " (" +
-    data.email +
-    ")" +
-    "&body=" +
-    data.message;
-  window.location.href = mailText;
+  const mailText
+    = 'mailto:mail@janpetry.de?subject=Contact Form via JanPetry.de from '
+    + data.name
+    + ' ('
+    + data.email
+    + ')'
+    + '&body='
+    + data.message
+  window.location.href = mailText
 }
 </script>
 
@@ -66,10 +66,9 @@ function onSubmit(data: any) {
       :ui="{ base: 'text-center', footer: 'text-center' }"
       :submit-button="{
         trailingIcon: 'i-heroicons-arrow-right-20-solid',
-        label: 'Send Message',
+        label: 'Send Message'
       }"
       @submit="onSubmit"
-    >
-    </UAuthForm>
+    />
   </UCard>
 </template>

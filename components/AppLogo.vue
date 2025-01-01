@@ -1,10 +1,14 @@
 <script lang="ts" setup>
-const initials = "jp"
+const initials = 'jp'
 </script>
 
 <template>
   <div class="flex items-center space-x-10">
-    <NuxtLink to="/" class="flex items-center group unstyled" title="Go Home">
+    <NuxtLink
+      to="/"
+      class="flex items-center group unstyled"
+      title="Go Home"
+    >
       <NuxtImg
         src="/jan-petry.webp"
         width="80"
@@ -13,7 +17,10 @@ const initials = "jp"
         style="width: 40px; height: 40px;"
         class="rounded-lg h-10 w-10 mr-3 group-hover:(h-11 w-11) transition-all"
       />
-      <div aria-label="Jan Petry Initials" class="hidden sm:block text-gray-700 dark:text-gray-200 relative transform top-2 group-hover:top-0">
+      <div
+        aria-label="Jan Petry Initials"
+        class="hidden sm:block text-gray-700 dark:text-gray-200 relative transform top-2 group-hover:top-0"
+      >
         <span class="block text-primary-700 font-bold text-3xl logo">{{ initials }}</span>
         <span class="block text-primary-700 font-bold text-3xl logo">{{ initials }}</span>
       </div>

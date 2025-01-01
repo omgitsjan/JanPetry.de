@@ -53,13 +53,13 @@ useSeoMeta({
     </ULandingHero>
 
     <ULandingSection class="!pt-0 flex justify-center items-center">
-      <ImagePlaceholder  />
+      <ImagePlaceholder />
     </ULandingSection>
 
     <ULandingSection
+      id="makesme"
       :title="page.features.title"
       :description="page.features.description"
-      id="makesme"
     >
       <UPageGrid>
         <ULandingCard
