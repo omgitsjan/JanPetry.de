@@ -11,10 +11,10 @@ useHead({
     <div class="gradient" />
 
     <UButton
-      icon="i-heroicons-home"
+      icon="i-lucide-home"
       label="Home"
       to="/"
-      color="black"
+      color="primary"
       class="absolute top-4"
     />
 

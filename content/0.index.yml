@@ -6,18 +6,19 @@ hero:
   description: I am Jan. Founder of JPProfessionals, DJ & Producer. Also full time developer based near Trier.
   headline:
     label: Jan Petry
-    icon: i-heroicons-user-20-solid
+    icon: i-lucide-user
   links:
     - label: Get to know me
       to: /#makesme
       size: xl
-      color: black
-      icon: i-heroicons-arrow-right-20-solid
+      color: primary
+      icon: i-lucide-arrow-right
       trailing: true
     - label: Find me on GitHub
       icon: i-simple-icons-github
       size: xl
-      color: gray
+      color: netraul
+      variant: outline
       to: https://github.com/omgitsjan
       target: _blank
 features:
@@ -26,22 +27,22 @@ features:
   items:
     - title: Cutting-Edge Technology
       description: I am dedicated to staying at the forefront of technology, adopting the latest tools and frameworks to ensure high performance and innovation.
-      icon: i-heroicons-device-phone-mobile
+      icon: i-lucide-smartphone
     - title: Always Up-to-Date
       description: Regular updates and continuous integration of new features keep your projects modern, secure, and competitive.
-      icon: i-heroicons-adjustments-horizontal
+      icon: i-lucide-router
     - title: Secure
       description: Implementing robust security measures to safeguard your data with best-in-class protocols and encryption.
-      icon: i-heroicons-lock-closed
+      icon: i-lucide-lock-closed
     - title: High Performance
       description: Optimizing for speed and efficiency, I deliver fast loading times and smooth user experiences, even under heavy load.
-      icon: i-mdi-lightning-bolt
+      icon: i-lucide-zap
     - title: Cost-Effective Solutions
       description: Delivering budget-friendly solutions without compromising quality, tailored to maximize your ROI.
-      icon: i-heroicons-currency-dollar
+      icon: i-lucide-euro
     - title: Scalable Architecture
       description: Designing systems that grow with your business, ensuring seamless operation and expansion capability.
-      icon: i-heroicons-chart-bar
+      icon: i-lucide-chart-column-increasing
 cta:
   title: Got a Question? Contact Me!
   description: Just hit me up if you want to collab or got any Question what so ever...

@@ -1,21 +1,18 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-}
+const page = await queryCollection('index').first()
 
 useSeoMeta({
   titleTemplate: '',
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
+  title: page.title,
+  ogTitle: page.title,
+  description: page.description,
+  ogDescription: page.description
 })
 </script>
 
 <template>
   <div v-if="page">
-    <ULandingHero
+    <UPageHero
       :title="page.hero.title"
       :description="page.hero.description"
       :links="page.hero.links"
@@ -50,32 +47,32 @@ useSeoMeta({
           />
         </UBadge>
       </template>
-    </ULandingHero>
+    </UPageHero>
 
-    <ULandingSection class="!pt-0 flex justify-center items-center">
+    <UPageSection class="!pt-0 flex justify-center items-center">
       <ImagePlaceholder />
-    </ULandingSection>
+    </UPageSection>
 
-    <ULandingSection
+    <UPageSection
       id="makesme"
       :title="page.features.title"
       :description="page.features.description"
     >
       <UPageGrid>
-        <ULandingCard
+        <UPageCard
           v-for="(item, index) in page.features.items"
           :key="index"
           v-bind="item"
         />
       </UPageGrid>
-    </ULandingSection>
+    </UPageSection>
 
-    <ULandingSection>
-      <ULandingCTA
+    <UPageSection>
+      <UPageCTA
         v-bind="page.cta"
         class="bg-gray-100/50 dark:bg-gray-800/50"
       />
-    </ULandingSection>
+    </UPageSection>
   </div>
 </template>
 

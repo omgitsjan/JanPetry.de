@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 import type { NuxtError } from '#app'
-
-useSeoMeta({
-  title: 'Page not found',
-  description: 'We are sorry but this page could not be found.'
-})
 
 defineProps({
   error: {
@@ -20,10 +14,24 @@ useHead({
   }
 })
 
-const { data: navigation } = await useAsyncData('navigation', () => fetchContentNavigation(), { default: () => [] })
-const { data: files } = useLazyFetch<ParsedContent[]>('/api/search.json', { default: () => [], server: false })
+useSeoMeta({
+  title: 'Page not found',
+  description: 'We are sorry but this page could not be found.'
+})
 
-provide('navigation', navigation)
+const links = [{
+  label: 'Home',
+  icon: 'i-lucide-home',
+  to: '/'
+}, {
+  label: 'Techstack',
+  icon: 'i-lucide-layers',
+  to: '/techstack'
+}, {
+  label: 'Blog',
+  icon: 'i-lucide-pencil',
+  to: '/blog'
+}]
 </script>
 
 <template>
@@ -33,7 +41,7 @@ provide('navigation', navigation)
     <UMain>
       <UContainer>
         <UPage>
-          <UPageError :error="error" />
+          <UError :error="error" />
         </UPage>
       </UContainer>
     </UMain>
@@ -43,10 +51,13 @@ provide('navigation', navigation)
     <ClientOnly>
       <LazyUContentSearch
         :files="files"
+        shortcut="meta_k"
         :navigation="navigation"
+        :links="links"
+        :fuse="{ resultLimit: 42 }"
       />
     </ClientOnly>
 
-    <UNotifications />
+    <UToaster />
   </div>
 </template>

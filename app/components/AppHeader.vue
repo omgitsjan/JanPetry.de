@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import type { NavItem } from '@nuxt/content/dist/runtime/types'
-
-const navigation = inject<Ref<NavItem[]>>('navigation', ref([]))
-
-const links = [
+const items = computed(() => [
   {
     label: 'My Techstack',
     to: '/techstack'
@@ -12,14 +8,19 @@ const links = [
     label: 'My Blog',
     to: '/blog'
   }
-]
+])
 </script>
 
 <template>
-  <UHeader :links="links">
-    <template #logo>
-      <AppLogo />
+  <UHeader>
+    <template #left>
+      <AppLogo class="w-auto h-6 shrink-0" />
     </template>
+
+    <UNavigationMenu
+      :items="items"
+      variant="link"
+    />
 
     <template #right>
       <UColorModeButton />
@@ -31,11 +32,11 @@ const links = [
       />
     </template>
 
-    <template #panel>
-      <UNavigationTree
-        :links="mapContentNavigation(navigation)"
-        default-open
-        :multiple="false"
+    <template #body>
+      <UNavigationMenu
+        :items="items"
+        orientation="vertical"
+        class="-mx-2.5"
       />
     </template>
   </UHeader>
