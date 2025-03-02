@@ -21,16 +21,36 @@ useSeoMeta({
   titleTemplate: '%s - Jan Petry',
   twitterCard: 'summary_large_image'
 })
+
+const links = [{
+  label: 'Home',
+  icon: 'i-lucide-home',
+  to: '/'
+}, {
+  label: 'Techstack',
+  icon: 'i-lucide-layers',
+  to: '/techstack'
+}, {
+  label: 'Blog',
+  icon: 'i-lucide-pencil',
+  to: '/blog'
+}]
 </script>
 
 <template>
-  <div>
+  <UApp>
     <NuxtLoadingIndicator />
 
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
 
-    <UNotifications />
-  </div>
+    <ClientOnly>
+      <LazyUContentSearch
+        shortcut="meta_k"
+        :links="links"
+        :fuse="{ resultLimit: 42 }"
+      />
+    </ClientOnly>
+  </UApp>
 </template>

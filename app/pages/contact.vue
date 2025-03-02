@@ -7,7 +7,7 @@ useSeoMeta({
   title: 'Contact'
 })
 
-const fields = [
+const fields: any = [
   {
     name: 'name',
     label: 'Name',
@@ -43,12 +43,12 @@ function onSubmit(data: any) {
 
   const mailText
     = 'mailto:mail@janpetry.de?subject=Contact Form via JanPetry.de from '
-    + data.name
-    + ' ('
-    + data.email
-    + ')'
-    + '&body='
-    + data.message
+      + data.name
+      + ' ('
+      + data.email
+      + ')'
+      + '&body='
+      + data.message
   window.location.href = mailText
 }
 </script>
@@ -61,11 +61,10 @@ function onSubmit(data: any) {
       :fields="fields"
       :validate="validate"
       title="Contact Me"
-      align="top"
-      icon="i-heroicons-envelope"
-      :ui="{ base: 'text-center', footer: 'text-center' }"
+      icon="i-lucide-mail"
+      :ui="{ footer: 'text-center' }"
       :submit-button="{
-        trailingIcon: 'i-heroicons-arrow-right-20-solid',
+        trailingIcon: 'i-lucide-arrow-right',
         label: 'Send Message'
       }"
       @submit="onSubmit"
