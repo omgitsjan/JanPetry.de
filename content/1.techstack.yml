@@ -1,4 +1,4 @@
-title: TechStack
+title: Techstack
 description: Choose the plan that's right for you.
 navigation.icon: i-heroicons-wrench-screwdriver
 partners:
@@ -26,18 +26,13 @@ faq:
   items:
     - label: What programming languages do you use?
       content: We specialize in a range of programming languages and Frameworks including JS/TS, Vue, Angular, Nuxt, C# and some PHP. Depending on the project's requirements, we select the most suitable technologies to ensure optimal performance and scalability.
-
     - label: How do I start a project with you?
       content: To start a project, simply fill out the contact form on my website/email me directly with your project details. We'll schedule a consultation to discuss your needs and outline the steps to get started.
-
     - label: Are you currently available for hire?
       content: For a full time job? No. But beside my 9 to 5 im working for my own Company. Feel free to reach out with your project details and we'll discuss how we can collaborate.
-
     - label: How long does it typically take to complete a website?
       content: The timeline for developing a website can vary based on its complexity, features, and revisions. Typically, a basic website takes about 3-6 weeks, while more complex projects may take several months.
-
     - label: Can you help with website maintenance after completion?
       content: For open source? No. For an real customer Projekt from JPProfessionals? Yes, there we offer ongoing maintenance and support packages to help keep your website updated and running smoothly. This includes security updates, performance optimizations, and regular backups.
-
     - label: Do you provide SEO and digital marketing services?
       content: Yes but only on our own programmed web projects, there we can incorporate SEO best practices and collaborate with digital marketing specialists to enhance your website's visibility and performance.
