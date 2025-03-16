@@ -22,12 +22,8 @@ jobs:
         with:
           node-version: '22.14'
 
-      - name: Enable pnpm with 9.x
-        run: |
-          corepack enable
-          corepack prepare pnpm@9.x --activate
-        env:
-          COREPACK_ENABLE_NETWORK: 0
+      - name: Install pnpm
+        run: npm install -g pnpm@9.x
 
       - name: Install dependencies
         run: pnpm install
