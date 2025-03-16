@@ -11,7 +11,6 @@ on:
 
 jobs:
   build:
-    # Bedingung: Läuft nicht bei Releases
     if: github.event_name != 'release'
     runs-on: ubuntu-22.04
     steps:
@@ -21,10 +20,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.14.0'
+          node-version: '22.14'
 
-      - name: Enable pnpm
-        run: corepack enable
+      - name: Enable pnpm with 9.x
+        run: |
+          corepack enable
+          corepack prepare pnpm@9.x --activate
+        env:
+          COREPACK_ENABLE_NETWORK: 0
 
       - name: Install dependencies
         run: pnpm install
