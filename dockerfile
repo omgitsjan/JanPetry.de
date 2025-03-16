@@ -1,9 +1,15 @@
 # Build stage
-FROM node:20.14.0-slim AS build
+FROM node:22.14-slim AS build
 WORKDIR /app
 
-# Enable pnpm
-RUN corepack enable
+# Install pnpm
+RUN npm install -g pnpm@9.x
+
+# Set environment variables for Nuxt UI Pro license and public site URL
+ARG NUXT_UI_PRO_LICENSE
+ENV NUXT_UI_PRO_LICENSE=$NUXT_UI_PRO_LICENSE
+ARG NUXT_PUBLIC_SITE_URL
+ENV NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL
 
 # Copy package.json and pnpm-lock.yaml
 COPY package.json pnpm-lock.yaml ./
@@ -18,7 +24,7 @@ COPY . .
 RUN pnpm run build
 
 # Production stage
-FROM node:20.14.0-slim
+FROM node:22.14-slim
 WORKDIR /app
 
 # Copy the build output from the build stage
