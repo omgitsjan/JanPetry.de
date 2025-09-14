@@ -1,9 +1,0 @@
-**/node_modules
-.git
-.DS_Store
-.output
-.nuxt
-dist
-.cache
-.env
-*.md

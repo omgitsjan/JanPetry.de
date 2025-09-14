@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm dev:*)",
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:portfolio-template.nuxt.dev)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

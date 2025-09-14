@@ -1,43 +1,13 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>nuxt/renovate-config-nuxt",
-    "config:recommended",
-    ":dependencyDashboard"
+    "github>nuxt/renovate-config-nuxt"
   ],
-  "timezone": "Europe/Berlin",
-  "packageRules": [
-    {
-      "matchManagers": [
-        "npm"
-      ],
-      "matchUpdateTypes": [
-        "patch"
-      ],
-      "automerge": true,
-      "automergeType": "branch"
-    },
-    {
-      "matchManagers": [
-        "npm"
-      ],
-      "assignees": [
-        "omgitsjan"
-      ],
-      "reviewers": [
-        "omgitsjan"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "major",
-        "patch"
-      ]
-    }
-  ],
-  "schedule": [
-    "before 11am on the first day of the month"
-  ],
-  "baseBranches": [
-    "main"
-  ]
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [{
+    "matchDepTypes": ["resolutions"],
+    "enabled": false
+  }],
+  "postUpdateOptions": ["pnpmDedupe"]
 }
