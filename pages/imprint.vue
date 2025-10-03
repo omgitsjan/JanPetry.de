@@ -34,10 +34,7 @@ if (post.value.image?.src) {
   })
 } else {
   defineOgImage({
-    component: 'Saas',
-    title,
-    description,
-    headline: 'Imprint'
+    component: 'Saas'
   })
 }
 </script>

@@ -46,7 +46,7 @@ Die Verwendung des Domain-Checkers ist denkbar einfach:
 
 Der Domain-Checker ist ein unverzichtbares Tool für jeden, der in der digitalen Welt Fuß fassen möchte. Mit seiner Hilfe können Sie sicherstellen, dass Sie die perfekte Domain für Ihr Projekt auswählen. Dank der Verwendung von Nuxt 3 und Nuxt UI (Pro) bieten wir eine schnelle, reibungslose und benutzerfreundliche Erfahrung, die die Domainsuche zum Kinderspiel macht.
 
-Wir laden Sie ein, den Domain-Checker auszuprobieren und freuen uns auf Ihr Feedback. Da es sich um ein Open-Source-Projekt handelt, ermutigen wir auch zur Beteiligung an der Weiterentwicklung. Besuchen Sie unser [GitHub-Repository](https://github.com/), um zu erfahren, wie Sie beitragen können.
+Wir laden Sie ein, den Domain-Checker auszuprobieren und freuen uns auf Ihr Feedback. Da es sich um ein Open-Source-Projekt handelt, ermutigen wir auch zur Beteiligung an der Weiterentwicklung. Besuchen Sie unser [GitHub-Repository](https://github.com/omgitsjan/domain-checker), um zu erfahren, wie Sie beitragen können.
 
 Bleiben Sie gespannt auf weitere Updates und neue Features, die wir bald hinzufügen!
 

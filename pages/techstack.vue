@@ -18,9 +18,7 @@ useSeoMeta({
 })
 
 defineOgImage({
-  component: 'Saas',
-  title: page.value.title,
-  description: page.value.description
+  component: 'Saas'
 })
 </script>
 

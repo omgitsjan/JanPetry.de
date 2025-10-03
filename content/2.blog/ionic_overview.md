@@ -66,25 +66,32 @@ Capacitor ist eine moderne Alternative zu Cordova und dient als Brücke zwischen
 Hier ist ein einfaches Beispiel, wie man eine neue Ionic-App erstellt und eine grundlegende Komponente hinzufügt:
 
 1. **Erstellen Sie eine neue Ionic-App**:
+
    ```bash
    ionic start myApp blank
    ```
+
 2. **Navigieren Sie in das Projektverzeichnis**:
+
    ```bash
    cd myApp
    ```
+
 3. **Fügen Sie eine neue Seite hinzu**:
+
    ```bash
    ionic generate page MyPage
    ```
+
 4. **Führen Sie die App im Browser aus**:
+
    ```bash
    ionic serve
    ```
 
 Diese Schritte zeigen, wie einfach es ist, mit Ionic eine neue App zu erstellen und zu starten.
 
-## Fazi
+## Fazit
 
 Ionic hat die Art und Weise, wie mobile Apps entwickelt werden, revolutioniert. Mit der Möglichkeit, plattformübergreifende Anwendungen mit einer einzigen Codebasis zu erstellen, hat Ionic die Entwicklung effizienter und konsistenter gestaltet. Für diejenigen, die sich noch nicht in die Welt von Ionic gewagt haben, gibt es keinen besseren Zeitpunkt, um zu starten.
 
