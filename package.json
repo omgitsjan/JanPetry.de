@@ -1,5 +1,8 @@
 {
-  "name": "nuxt-ui-template-portfolio",
+  "name": "janpetry.de",
+  "version": "1.0.0",
+  "description": "Jan Petry's personal website",
+  "author": "Jan Petry",
   "private": true,
   "type": "module",
   "scripts": {
