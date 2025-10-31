@@ -1,3 +1,4 @@
+/* @unocss-include */
 import type { NavigationMenuItem } from '@nuxt/ui'
 
 export const navLinks: NavigationMenuItem[] = [{

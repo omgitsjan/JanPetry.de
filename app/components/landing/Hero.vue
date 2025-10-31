@@ -35,10 +35,10 @@ defineProps<{
       >
         <UColorModeAvatar
           class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-          :light="global.picture?.light!"
-          :src="global.picture?.light!"
-          :dark="global.picture?.dark!"
-          :alt="global.picture?.alt!"
+          :light="global.picture.light"
+          :src="global.picture.light"
+          :dark="global.picture.dark"
+          :alt="global.picture.alt"
         />
       </Motion>
     </template>

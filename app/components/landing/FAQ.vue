@@ -47,15 +47,21 @@ const ui = {
           :ui="{
             item: 'border-none',
             trigger: 'mb-2 border-0 group px-4 transform-gpu rounded-lg bg-elevated/60 will-change-transform hover:bg-muted/50 text-base',
-            trailingIcon: 'group-data-[state=closed]:rotate-0 group-data-[state=open]:rotate-135 text-base text-muted'
+            trailingIcon: 'group-data-[state=closed]:rotate-0 group-data-[state=open]:rotate-135 text-base text-muted',
+            label: 'text-base font-medium'
           }"
+          label-key="label"
         >
-          <template #body="{ item: _item }">
-            <MDC
-              :value="_item.content"
-              unwrap="p"
-              class="px-4"
-            />
+          <template #default="{ item: _item }">
+            <div class="px-4">
+              <h4 class="font-semibold text-base mb-3">
+                {{ _item.label }}
+              </h4>
+              <MDC
+                :value="_item.content"
+                unwrap="p"
+              />
+            </div>
           </template>
         </UAccordion>
       </template>

@@ -23,7 +23,7 @@ export default defineAppConfig({
     }
   },
   footer: {
-    credits: `Made with <3 • © ${new Date().getFullYear()}`,
+    credits: `Made with <3 by Jan Petry • © ${new Date().getFullYear()}`, // is this ok so?
     colorMode: false,
     links: [{
       'icon': 'i-simple-icons-discord',

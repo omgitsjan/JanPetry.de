@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app'
+import { navLinks } from '~/utils/links'
 
 defineProps({
   error: {

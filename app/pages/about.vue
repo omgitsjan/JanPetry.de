@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('about', () => {
+const route = useRoute()
+
+const { data: page } = await useAsyncData(`about-${route.path}`, () => {
   return queryCollection('about').first()
 })
 if (!page.value) {
@@ -35,8 +37,10 @@ useSeoMeta({
     >
       <UColorModeAvatar
         class="sm:rotate-4 size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-        :src="global.picture?.light!"
-        :alt="global.picture?.alt!"
+        :src="global.picture.light"
+        :light="global.picture.light"
+        :dark="global.picture.dark"
+        :alt="global.picture.alt"
       />
     </UPageHero>
     <UPageSection

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { navLinks } from '~/utils/links'
 </script>
 
 <template>

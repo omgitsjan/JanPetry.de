@@ -2,7 +2,7 @@ seo:
   title: "Jan Petry - Web Developer & Founder"
   description: "Welcome! I'm Jan Petry, a web developer and founder based in Germany. I deliver secure, modern, high-performance digital solutions."
 title: "Hey, I'm Jan Petry 👋"
-description: "I build solutions where modern technology meets performance, security, and scalability. I was a full-time developer now founder and Business Development Manager, based near Trier."
+description: "I build solutions where modern technology meets performance, security, and scalability. I'm a former full-time developer, now a founder and Business Development Manager based near Trier."
 hero:
   links:
     - label: "Here is my portfolio"
@@ -15,10 +15,10 @@ hero:
 about:
   title: "About Me"
   description: |
-    I'm Jan Petry, founder of JPProfessionals, DJ & producer, and a full-time developer based near Trier, Germany.
-    My work focuses on using cutting-edge technologies, best practices, and secure, scalable architecture.
+    I'm Jan Petry, founder of JPProfessionals, DJ & producer, and a Business Development Manager based near Trier, Germany.
+    Previously a full-time developer, my work focuses on cutting-edge technologies, best practices, and secure, scalable architecture.
     I deliver high-performance, cost-effective solutions that truly help businesses grow.
-    Have a project idea? Let’s talk!
+    Have a project idea? Let's talk!
 experience:
   title: Tech Stack & Experience
   items:
@@ -48,29 +48,41 @@ faq:
   title: "Frequently Asked Questions"
   description: "Answers to common questions about my services."
   categories:
-    - title: "Working With Jan"
+    - title: "Services & Process"
       questions:
-        - label: "Which programming languages do you use?"
+        - label: "What services do you offer?"
           content: |
-            My daily toolkit includes JavaScript (Node, Vue/Nuxt), TypeScript, Docker, and SQL/PostgreSQL. I choose the right stack depending on the project goals.
-        - label: "Can you maintain websites after launch?"
+            I specialize in full-stack web development with Nuxt/Vue, TypeScript, Node.js, and modern cloud tooling. I build marketing sites, web apps, content platforms, and integrations.
+        - label: "What is your process like?"
           content: |
-            Yes, I provide ongoing support & maintenance after delivery to keep your project secure and up to date.
-        - label: "Do you help with SEO and digital marketing?"
+            Typically: Discovery → Scope → Design/Architecture → Implementation → QA → Launch → Iterate. I work in short, transparent cycles with regular check-ins and demos.
+        - label: "Which programming languages and tools do you use?"
           content: |
-            All sites are built with technical SEO best practices. For extended digital marketing, I work with trusted partners.
-        - label: "How do I start a project with you?"
-          content: |
-            Just send me a message describing your idea. We’ll discuss goals and timelines, and then I’ll provide a quote.
-        - label: "Are you currently available?"
-          content: |
-            My availability varies—feel free to ask! I’m always open to interesting projects.
-        - label: "How long does a project take?"
-          content: |
-            It depends on the scope—smaller sites usually take a few weeks, larger solutions around two to three months.
-        - label: "What makes your service unique?"
-          content: |
-            I deliver modern technologies, regular updates, secure and scalable solutions—and always work transparently and efficiently.
+            Daily stack: TypeScript, Vue/Nuxt, Node.js, PostgreSQL, Prisma, Docker, and cloud providers (Vercel, Netlify, Fly.io). I choose tools based on goals and constraints.
         - label: "Do you collaborate with agencies or partners?"
           content: |
-            Yes, I have already realized many partner and white-label projects. Just get in touch to discuss!
+            Yes, I've delivered multiple partner and white-label projects. I'm comfortable integrating into existing teams and workflows.
+
+    - title: "Pricing & Timelines"
+      questions:
+        - label: "How long does a typical project take?"
+          content: |
+            Small sites: 2-4 weeks. Product MVPs: 4-10 weeks. Larger or complex projects vary based on scope, integrations, and compliance needs.
+        - label: "How do you price projects?"
+          content: |
+            Fixed-price for clearly defined scopes, or weekly retainers for iterative work. We'll choose the model that best fits your goals and risk tolerance.
+        - label: "Can you maintain websites after launch?"
+          content: |
+            Yes. I offer ongoing maintenance and support plans covering updates, security, performance, and small enhancements.
+
+    - title: "About Me"
+      questions:
+        - label: "Are you currently available?"
+          content: |
+            Availability changes—reach out with your timeframe and I'll confirm. I can usually accommodate discovery quickly.
+        - label: "How do we get started?"
+          content: |
+            Send a short brief with goals, audience, must-haves, and timeline. I'll propose next steps, a plan, and an estimate.
+        - label: "What makes your service unique?"
+          content: |
+            I focus on modern tech, security, and performance, with pragmatic scope and clear communication. You get speed without sacrificing quality.
