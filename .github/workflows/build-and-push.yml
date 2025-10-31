@@ -12,7 +12,6 @@ jobs:
   build-and-push:
     runs-on: ubuntu-24.04
     env:
-      NUXT_UI_PRO_LICENSE: ${{ secrets.NUXT_UI_PRO_LICENSE }}
       NUXT_PUBLIC_SITE_URL: ${{ vars.NUXT_PUBLIC_SITE_URL }}
     steps:
       - name: Checkout code
@@ -47,7 +46,6 @@ jobs:
           tags: omgitsjan/janpetry-de:temp
           outputs: type=image,name=omgitsjan/janpetry-de,push=false
           build-args: |
-            NUXT_UI_PRO_LICENSE=${{ secrets.NUXT_UI_PRO_LICENSE }}
             NUXT_PUBLIC_SITE_URL=${{ vars.NUXT_PUBLIC_SITE_URL }}
 
       - name: Tag and push for release
