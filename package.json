@@ -28,7 +28,7 @@
     "@nuxthq/studio": "^2.2.1",
     "@nuxtjs/seo": "3.1.0",
     "@vueuse/nuxt": "^13.9.0",
-    "eslint": "^9.31.0",
+    "eslint": "^9.39.0",
     "sass": "^1.89.2",
     "vue-tsc": "^2.2.12",
     "wrangler": "^4.24.3"
