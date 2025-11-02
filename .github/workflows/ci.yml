@@ -17,6 +17,8 @@ jobs:
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 10.20.0
 
       - name: Install node
         uses: actions/setup-node@v5
@@ -32,3 +34,6 @@ jobs:
 
       - name: Typecheck
         run: pnpm run typecheck
+
+      - name: Build
+        run: pnpm run build

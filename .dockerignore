@@ -7,3 +7,7 @@ dist
 .cache
 .env
 *.md
+.github
+.vscode
+.idea
+

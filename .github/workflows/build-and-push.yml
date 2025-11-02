@@ -15,15 +15,18 @@ jobs:
       NUXT_PUBLIC_SITE_URL: ${{ vars.NUXT_PUBLIC_SITE_URL }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22.14'
+        uses: actions/checkout@v5
 
       - name: Install pnpm
-        run: npm install -g pnpm@9.x
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.20.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: pnpm
 
       - name: Install dependencies
         run: pnpm install
@@ -37,21 +40,14 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
-      - name: Build Docker image
-        id: build-image
+      - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
           context: .
-          push: false
-          tags: omgitsjan/janpetry-de:temp
-          outputs: type=image,name=omgitsjan/janpetry-de,push=false
+          file: ./Dockerfile
+          push: true
+          tags: |
+            omgitsjan/janpetry-de:latest
+            omgitsjan/janpetry-de:${{ github.event.release.tag_name }}
           build-args: |
             NUXT_PUBLIC_SITE_URL=${{ vars.NUXT_PUBLIC_SITE_URL }}
-
-      - name: Tag and push for release
-        run: |
-          TAG=${{ github.event.release.tag_name }}
-          docker tag omgitsjan/janpetry-de:temp omgitsjan/janpetry-de:latest
-          docker tag omgitsjan/janpetry-de:temp omgitsjan/janpetry-de:$TAG
-          docker push omgitsjan/janpetry-de:latest
-          docker push omgitsjan/janpetry-de:$TAG
