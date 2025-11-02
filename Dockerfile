@@ -19,11 +19,20 @@ ENV NUXT_PUBLIC_SITE_URL=$NUXT_PUBLIC_SITE_URL
 # Copy package.json and pnpm-lock.yaml
 COPY package.json pnpm-lock.yaml ./
 
-# Install dependencies
-RUN pnpm install
+# Install dependencies (scripts will be ignored initially)
+RUN pnpm install --ignore-scripts
+
+# Find and build better-sqlite3 manually with node-gyp
+# Install node-gyp globally if not available, then build better-sqlite3
+RUN npm install -g node-gyp || true && \
+    find node_modules -name "better-sqlite3" -type d -path "*/node_modules/better-sqlite3" | head -1 | xargs -I {} sh -c 'cd {} && npm run build-release || node-gyp rebuild || npm install'
 
 # Copy the rest of the application
 COPY . .
+
+# Reinstall to ensure all dependencies are properly set up (better-sqlite3 is already built)
+# This will skip better-sqlite3 build since it's already built, but will install missing deps like tailwindcss
+RUN pnpm install --force || pnpm install
 
 # Build the application
 RUN pnpm run build
