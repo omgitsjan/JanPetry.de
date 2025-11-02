@@ -8,11 +8,11 @@ image: /blog/github.webp
 date: 2023-11-08
 minRead: 6
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 Versionen von Software zu verwalten, ist eine wichtige Aufgabe für Softwareentwickler. Mit Versionskontrollsystemen (VCS) können Änderungen an Software effizient und nachvollziehbar verwaltet werden.

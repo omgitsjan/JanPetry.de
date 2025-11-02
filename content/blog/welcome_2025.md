@@ -6,11 +6,11 @@ image: /blog/2025.webp
 date: 2025-01-01
 minRead: 6
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 Hallo zusammen und ein frohes neues Jahr 2025! 🎉

@@ -5,11 +5,11 @@ image: /blog/code.webp
 minRead: 6
 date: 2024-03-01
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 ## 💚 Nuxt UI Pro v1.0 💚

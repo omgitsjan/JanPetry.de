@@ -8,11 +8,11 @@ image: /blog/domain-tool.webp
 date: 2024-03-01
 minRead: 6
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 In der Welt der Webentwicklung und des Online-Business ist die Wahl der richtigen Domain für Ihr Projekt entscheidend. Eine gute Domain kann die Sichtbarkeit und Markenidentität erheblich verbessern, während eine schlecht gewählte Domain zu Verwirrung und geringerer Reichweite führen kann. Um Ihnen die Entscheidung zu erleichtern, haben wir ein neues Tool entwickelt: den Domain-Prüfer. Dieses Open-Source-Tool ermöglicht es Ihnen, schnell und einfach zu überprüfen, ob eine bestimmte Domain bereits vergeben ist oder nicht.

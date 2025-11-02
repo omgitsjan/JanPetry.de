@@ -32,7 +32,7 @@ export default defineAppConfig({
       'aria-label': 'Me on Discord'
     }, {
       'icon': 'i-simple-icons-linkedin',
-      'to': 'https://linkedin.de/in/japetry/',
+      'to': 'https://www.linkedin.com/in/japetry/',
       'target': '_blank',
       'aria-label': 'Me on LinkedIn'
     }, {

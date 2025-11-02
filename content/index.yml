@@ -5,7 +5,7 @@ title: "Hey, I'm Jan Petry 👋"
 description: "I build solutions where modern technology meets performance, security, and scalability. I'm a former full-time developer, now a founder and Business Development Manager based near Trier."
 hero:
   links:
-    - label: "Here is my portfolio"
+    - label: "View my GitHub"
       icon: "i-simple-icons-github"
       to: https://github.com/omgitsjan
       color: "neutral"

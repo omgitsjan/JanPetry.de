@@ -6,11 +6,11 @@ image: /blog/code2.webp
 date: 2023-06-01
 minRead: 6
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 Mit diesem Beitrag will ich euch das Thema .NET Testing etwas näher bringen. Da die Softwareentwicklung ein fortlaufender Prozess der Verbesserung und Optimierung ist, spielt das Testing dabei eine entscheidende Rolle. Das Testen hilft uns, unser Vertrauen in den Code zu stärken, den wir schreiben, und natürlich Probleme frühzeitig zu identifizieren. Wir werden uns in diesem Beitrag auf das NUnit-Framework konzentrieren, allerdings existieren zahlreiche weitere Testing-Frameworks in .NET, welche vergleichbare Ansätze verfolgen.

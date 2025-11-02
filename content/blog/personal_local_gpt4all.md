@@ -7,11 +7,11 @@ image: /blog/gpt.webp
 minRead: 6
 date: 2023-12-27
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 ## 🤖 Experiment über die Feiertage: Lokales LLM mit GPT4All 🤖

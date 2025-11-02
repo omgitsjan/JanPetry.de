@@ -62,14 +62,14 @@ export default defineContentConfig({
         faq: createBaseSchema().extend({
           categories: z.array(
             z.object({
-              title: z.string().nonempty(),
+              title: z.string().min(1),
               questions: z.array(
                 z.object({
-                  label: z.string().nonempty(),
-                  content: z.string().nonempty()
+                  label: z.string().min(1),
+                  content: z.string().min(1)
                 })
-              )
-            }))
+              ).min(1)
+            })).min(1)
         })
       })
     }),
@@ -77,10 +77,10 @@ export default defineContentConfig({
       type: 'data',
       source: 'projects/*.yml',
       schema: z.object({
-        title: z.string().nonempty(),
-        description: z.string().nonempty(),
-        image: z.string().nonempty().editor({ input: 'media' }),
-        url: z.string().nonempty(),
+        title: z.string().min(1),
+        description: z.string().min(1),
+        image: z.string().min(1).editor({ input: 'media' }),
+        url: z.string().min(1),
         tags: z.array(z.string()),
         date: z.date()
       })
@@ -91,7 +91,7 @@ export default defineContentConfig({
       schema: z.object({
         minRead: z.number(),
         date: z.date(),
-        image: z.string().nonempty().editor({ input: 'media' }),
+        image: z.string().min(1).editor({ input: 'media' }),
         author: createAuthorSchema()
       })
     }),

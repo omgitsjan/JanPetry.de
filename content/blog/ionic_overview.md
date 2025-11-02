@@ -7,11 +7,11 @@ image: /blog/ionic.webp
 date: 2024-05-17
 minRead: 6
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 Ionic sollte jedem Entwickler, der sich mit mobilen Anwendungen beschäftigt, ein Begriff sein. Es ist ein Name, der in Tech-Blogs erwähnt, auf Konferenzen diskutiert und in Foren lebhaft debattiert wird. Aber was genau ist Ionic? Warum erzeugt es so viel Aufsehen in der Entwicklergemeinschaft und warum spricht scheinbar jeder über Ionic? Um diese Fragen zu beantworten, müssen wir zuerst verstehen, was Ionic ist und was es tut.

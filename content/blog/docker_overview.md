@@ -6,11 +6,11 @@ image: /blog/docker.webp
 date: 2023-07-01
 minRead: 6
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 Docker sollte jedem Entwickler kein unbekannter Name sein. Es ist ein Name, der in Tech-Blogs zitiert, auf Konferenzen diskutiert und in Foren lebhaft debattiert wird. Aber was genau ist Docker? Warum erzeugt es so viel Aufsehen in der Entwicklergemeinschaft und warum scheint es, als ob jeder über Docker spricht? Um diese Fragen zu beantworten, müssen wir zuerst verstehen, was Docker ist und was es tut.

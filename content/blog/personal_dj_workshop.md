@@ -6,11 +6,11 @@ image: /blog/djworkshop.webp
 date: 2023-12-22
 minRead: 6
 author:
-  - name: Jan Petry
-    to: https://github.com/omgitsjan
-    avatar:
-      src: https://avatars.githubusercontent.com/u/42674570
-      alt: Jan Petry
+  name: Jan Petry
+  to: https://github.com/omgitsjan
+  avatar:
+    src: https://avatars.githubusercontent.com/u/42674570
+    alt: Jan Petry
 ---
 
 In der Welt der Softwareentwicklung, wo ich normalerweise über Programmierung und Technik schreibe, ist es immer aufregend, wenn ich mein Wissen und meine Leidenschaft mit der jüngeren Generation teilen kann. Dieses Mal geht es um Musik - genauer gesagt um DJing.
