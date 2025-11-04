@@ -33,11 +33,9 @@ defineProps<{
           delay: 0.1
         }"
       >
-        <UColorModeAvatar
-          class="size-18 ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-          :light="global.picture.light"
-          :src="global.picture.light"
-          :dark="global.picture.dark"
+        <UAvatar
+          class="size-18 ring ring-default ring-offset-3 ring-offset-bg"
+          :src="global.picture.src"
           :alt="global.picture.alt"
         />
       </Motion>

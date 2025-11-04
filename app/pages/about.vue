@@ -1,25 +1,25 @@
 <script setup lang="ts">
-const route = useRoute()
+const route = useRoute();
 
 const { data: page } = await useAsyncData(`about-${route.path}`, () => {
-  return queryCollection('about').first()
-})
+  return queryCollection("about").first();
+});
 if (!page.value) {
   throw createError({
     statusCode: 404,
-    statusMessage: 'Page not found',
-    fatal: true
-  })
+    statusMessage: "Page not found",
+    fatal: true,
+  });
 }
 
-const { global } = useAppConfig()
+const { global } = useAppConfig();
 
 useSeoMeta({
   title: page.value?.seo?.title || page.value?.title,
   ogTitle: page.value?.seo?.title || page.value?.title,
   description: page.value?.seo?.description || page.value?.description,
-  ogDescription: page.value?.seo?.description || page.value?.description
-})
+  ogDescription: page.value?.seo?.description || page.value?.description,
+});
 </script>
 
 <template>
@@ -32,27 +32,24 @@ useSeoMeta({
         container: 'lg:flex sm:flex-row items-center',
         title: '!mx-0 text-left',
         description: '!mx-0 text-left',
-        links: 'justify-start'
+        links: 'justify-start',
       }"
     >
-      <UColorModeAvatar
-        class="sm:rotate-4 size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-(--ui-bg)"
-        :src="global.picture.light"
-        :light="global.picture.light"
-        :dark="global.picture.dark"
+      <UAvatar
+        class="sm:rotate-4 size-36 rounded-lg ring ring-default ring-offset-3 ring-offset-bg"
+        :src="global.picture.src"
         :alt="global.picture.alt"
       />
     </UPageHero>
     <UPageSection
       :ui="{
-        container: '!pt-0'
+        container: '!pt-0',
       }"
     >
-      <MDC
-        :value="page.content"
-        unwrap="p"
-      />
-      <div class="flex flex-row justify-center items-center py-10 space-x-[-2rem]">
+      <MDC :value="page.content" unwrap="p" />
+      <div
+        class="flex flex-row justify-center items-center py-10 -space-x-8"
+      >
         <PolaroidItem
           v-for="(image, index) in page.images"
           :key="index"
