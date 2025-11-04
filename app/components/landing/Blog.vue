@@ -45,7 +45,7 @@ if (!posts.value) {
             size="xs"
             variant="link"
             class="px-0 gap-0"
-            label="Read Article"
+            label="Blog-Eintrag lesen"
           >
             <template #trailing>
               <UIcon

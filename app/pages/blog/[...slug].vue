@@ -8,7 +8,12 @@ const route = useRoute()
 const { data: page } = await useAsyncData(route.path, () =>
   queryCollection('blog').path(route.path).first()
 )
-if (!page.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
+if (!page.value)
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Page not found',
+    fatal: true
+  })
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
   queryCollectionItemSurroundings('blog', route.path, {
     fields: ['description']
@@ -16,18 +21,28 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () =>
 )
 
 const navigation = inject<Ref<ContentNavigationItem[]>>('navigation', ref([]))
-const blogNavigation = computed(() => navigation.value.find(item => item.path === '/blog')?.children || [])
+const blogNavigation = computed(
+  () => navigation.value.find(item => item.path === '/blog')?.children || []
+)
 
-const breadcrumb = computed(() => mapContentNavigation(findPageBreadcrumb(blogNavigation?.value, page.value?.path)).map(({ icon, ...link }) => link))
+const breadcrumb = computed(() =>
+  mapContentNavigation(
+    findPageBreadcrumb(blogNavigation?.value, page.value?.path)
+  ).map(({ icon, ...link }) => link)
+)
 
 if (page.value.image) {
   defineOgImage({ url: page.value.image })
 } else {
-  defineOgImageComponent('Blog', {
-    headline: breadcrumb.value.map(item => item.label).join(' > ')
-  }, {
-    fonts: ['Geist:400', 'Geist:600']
-  })
+  defineOgImageComponent(
+    'Blog',
+    {
+      headline: breadcrumb.value.map(item => item.label).join(' > ')
+    },
+    {
+      fonts: ['Geist:400', 'Geist:600']
+    }
+  )
 }
 
 const title = page.value?.seo?.title || page.value?.title
@@ -68,20 +83,20 @@ const formatDate = (dateString: string) => {
           Blog
         </ULink>
         <div class="flex flex-col gap-3 mt-8">
-          <div class="flex text-xs text-muted items-center justify-center gap-2">
+          <div
+            class="flex text-xs text-muted items-center justify-center gap-2"
+          >
             <span v-if="page.date">
               {{ formatDate(page.date) }}
             </span>
-            <span v-if="page.date && page.minRead">
-              -
-            </span>
-            <span v-if="page.minRead">
-              {{ page.minRead }} MIN READ
-            </span>
+            <span v-if="page.date && page.minRead"> - </span>
+            <span v-if="page.minRead"> {{ page.minRead }} MIN READ </span>
           </div>
           <NuxtImg
             :src="page.image"
             :alt="page.title"
+            quality="90"
+            loading="lazy"
             class="rounded-lg w-full h-[300px] object-cover object-center"
           />
           <h1 class="text-4xl text-center font-medium max-w-3xl mx-auto mt-4">
@@ -112,7 +127,12 @@ const formatDate = (dateString: string) => {
               variant="link"
               color="neutral"
               label="Copy link"
-              @click="copyToClipboard(articleLink || '', 'Article link copied to clipboard')"
+              @click="
+                copyToClipboard(
+                  articleLink || '',
+                  'Article link copied to clipboard'
+                )
+              "
             />
           </div>
           <UContentSurround :surround />

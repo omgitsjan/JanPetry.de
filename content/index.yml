@@ -23,24 +23,56 @@ experience:
   title: Tech Stack & Experience
   items:
     - position: "Using"
-      date: "2020 - Present"
+      date: "2018 - 2024"
+      company:
+        name: C#
+        logo: "i-simple-icons-csharp"
+        url: "https://dotnet.microsoft.com/languages/csharp"
+        color: "#239120"
+    - position: "Using"
+      date: "2021 - 2024"
+      company:
+        name: Angular
+        logo: "i-simple-icons-angular"
+        url: "https://angular.io"
+        color: "#DD0031"
+    - position: "Using"
+      date: "2022 - Present"
       company:
         name: Nuxt
         logo: "i-simple-icons-nuxtdotjs"
         url: "https://nuxt.com"
         color: "#00DC82"
-    - position: "Coming Soon"
-      date: "2025"
+    - position: "Using"
+      date: "2022 - 2023"
       company:
-        name: "More Tech"
+        name: React
         logo: "i-simple-icons-react"
-        url: "#"
+        url: "https://react.dev"
         color: "#61DAFB"
+    - position: "Using"
+      date: "2024 - Present"
+      company:
+        name: N8N
+        logo: "i-simple-icons-n8n"
+        url: "https://n8n.io"
+        color: "#2C3E50"
+    - position: "Using"
+      date: "2020 - Present"
+      company:
+        name: Jira
+        logo: "i-simple-icons-jira"
+        url: "https://www.atlassian.com/software/jira"
+        color: "#0052CC"
 testimonials:
-  - quote: "I love working with Jan."
+  - quote: "Jan is a reliable and competent developer who is great to work with."
     author:
       name: "Daniel Ludwig"
-      description: "Full Stack Developer at A EINS Business Inovation GmbH"
+      description: "Full Stack Developer at A EINS Business Intelligence GmbH"
+  - quote: "Long and good collaboration - looking forward to the coming years."
+    author:
+      name: "Otmar Böhm"
+      description: "CEO at MB Parkett"
 blog:
   title: "Blog"
   description: "Tech insights, project updates & more on my blog."

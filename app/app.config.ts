@@ -1,8 +1,7 @@
 export default defineAppConfig({
   global: {
     picture: {
-      dark: '/jan-petry.webp',
-      light: '/jan-petry.webp',
+      src: '/jan-petry.webp',
       alt: 'My profile picture'
     },
     meetingLink: 'mailto:mail@janpetry.de',
